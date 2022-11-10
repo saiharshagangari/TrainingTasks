@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+function sendNotification()
+{
+    const notify = new Notification("You got a mail",{
+        body:"ayyagaru no 1"
+    });
+    notify.onclick = (e) => {
+                    window.location.href = "https://www.google.com";
+                            };
+}
+
+            console.log(Notification.permission)
+            if(Notification.permission === 'granted')
+            {
+                sendNotification();
+            }
+            else if(Notification.permission !== 'denied')
+            {
+                Notification.requestPermission().then(permission => {
+                    if(permission==='granted')
+                    sendNotification();
+                });
+            }
+        </script>
+
+
+    </head>
+    <body>
+
+    </body>
+</html>

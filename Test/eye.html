@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script>
+            function reveal(id)
+            {
+                var pid = document.getElementById(id);
+                var es = document.getElementById("eyeslashid");
+                var t = pid.getAttribute('type');
+                if(t==='password')
+                {
+                    pid.setAttribute('type','text');
+                    es.setAttribute('class','eyeslash');   
+                }
+                else
+                {
+                    pid.setAttribute('type','password');  
+                    es.setAttribute('class',''); 
+                }
+            }
+        </script>
+
+    <style>
+.donut-ring {
+    display: inline-block;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: radial-gradient(circle, transparent 45%, black 10%);
+    margin: 2px 0 0 3px;
+}
+
+.eyelash
+{
+    position: absolute;
+    width: 19px;
+    height: 9px; /* as the half of the width */
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border: 2px solid black;
+    border-bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.eyeslash
+{
+    display: inline;
+    display: block;
+    position:fixed;
+    width:23px;
+    height:2px;
+    background-color: black;
+    transform: rotateZ(45deg);
+    margin: 2 0 0 -8;
+}
+
+.eye{
+    position: relative;
+    display:inline-block;
+    margin: -0 0 12 2;
+}
+
+    </style>
+    </head>
+
+    <body>
+
+        <div class="inp">
+            <input type="password" id="password">
+            <span >
+                <i class="eye">
+                    <span class="eyelash" onclick="reveal('password')">
+                    <span class="donut-ring" ><span class="" id="eyeslashid"></span></span>
+                    </span>
+                </i>
+            </span>
+        </div>
+    </body>
+</html>

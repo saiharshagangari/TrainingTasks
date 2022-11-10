@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function detectbrowser(event)
+            {
+                debugger;
+                var h = document.getElementById('ahref');
+                var reflink = h.getAttribute('href');
+
+                navigator.clipboard.writeText(reflink).then(
+                    function(){
+                        alert("copied!")
+                    },
+                    function(){
+                        alert("copy failed")
+                    }
+                    );
+                
+                
+                
+               
+                var p = document.getElementById('p');
+                p.innerHTML = navigator.userAgent;
+               
+            }
+        </script>
+    </head>
+    <body>
+        <a href="https://en.wikipedia.org/wiki/.netframework" onclick="detectbrowser(event);" 
+        id="ahref" target="_blank" title="copy paste the link in fe">click here</a>
+        <p id="p"></p>
+       
+        
+    </body>
+</html>

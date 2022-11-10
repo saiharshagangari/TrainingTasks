@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0e17e2b9-6618-48eb-9738-8716c6c92aaa": {
+      "ProjectGuid": "0e17e2b9-6618-48eb-9738-8716c6c92aaa",
+      "DisplayName": "TestApp",
+      "ColorIndex": 0
+    },
+    "0c21f632-b62d-4540-8abc-bd803405fbb8": {
+      "ProjectGuid": "0c21f632-b62d-4540-8abc-bd803405fbb8",
+      "DisplayName": "CustomMathLibrary",
+      "ColorIndex": 1
+    },
+    "d2edb920-c8c9-499a-93c0-bb9facb1ed6c": {
+      "ProjectGuid": "d2edb920-c8c9-499a-93c0-bb9facb1ed6c",
+      "DisplayName": "TestforGAC",
+      "ColorIndex": 2
+    },
+    "a8590a1f-053f-443e-a93c-8d22088c5665": {
+      "ProjectGuid": "a8590a1f-053f-443e-a93c-8d22088c5665",
+      "DisplayName": "TestForGAC",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

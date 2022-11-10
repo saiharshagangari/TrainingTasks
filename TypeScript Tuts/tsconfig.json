@@ -1,0 +1,7 @@
+{
+    "compilerOptions":
+    {
+        "target": "es5",
+        "outDir":"C:\\Users\\Sai_Harsha_Gangari\\Desktop\\Training Tasks\\TypeScript Tuts\\CompiledToJS"
+    }
+}

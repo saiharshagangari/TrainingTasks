@@ -1,0 +1,8 @@
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\bin\Debug\Sample.exe.config
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\bin\Debug\Sample.exe
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\bin\Debug\Sample.pdb
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\obj\Debug\Sample.csproj.AssemblyReference.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\obj\Debug\Sample.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\obj\Debug\Sample.csproj.CoreCompileInputs.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\obj\Debug\Sample.exe
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\Sample\obj\Debug\Sample.pdb

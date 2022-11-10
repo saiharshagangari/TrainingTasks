@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            .orange
+            {background-color: orange;
+            width: 150px;
+            height:250px;
+            cursor:pointer;
+        }
+        .chead
+        {
+            background-color: red;
+            width:150px;
+            height:75px;
+        }
+
+        .flipTheCard
+        {
+            transform: rotateY(180deg);
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="orange" id="card" ">
+            <p onclick="flipTheCard()">
+                <div class="chead"></div>
+                <div class="cbody"></div>
+            </p>
+            
+        </div>
+    </body>
+    <script>
+
+        function flipTheCard()
+        {
+            debugger
+            var card = document.getElementById("card");
+            card.setAttribute("class","flipTheCard");
+        }
+       
+var embedTag = document.createElement("embed");
+embedTag.id="EmbedmediaPlayer";
+embedTag.type="application/x-mxplayer2";
+embedTag.src = vediolink;
+embedTag.width="640";
+embedTag.height="545"
+
+var param4 = document.createElement("param");
+param4.name="uiMode";
+param4.value="full";
+
+var param5 = document.createElement("param");
+param5.name="loop";
+param5.value="false";
+
+
+    </script>
+</html>

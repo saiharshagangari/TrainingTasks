@@ -1,0 +1,11 @@
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\bin\Debug\TestApp.exe.config
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\bin\Debug\TestApp.exe
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\bin\Debug\TestApp.pdb
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.csproj.AssemblyReference.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.exe
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.pdb
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\bin\Debug\CustomMathLibrary.dll
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\bin\Debug\CustomMathLibrary.pdb
+C:\Users\Sai_Harsha_Gangari\Desktop\Training Tasks\TestApp\obj\Debug\TestApp.csproj.CopyComplete

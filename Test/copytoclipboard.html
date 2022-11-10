@@ -1,0 +1,36 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <a href="C:\ebill" id="hlink">click here</a>
+        <textarea id="inputfield"></textarea>
+    </body>
+    <script>
+        document.getElementById('hlink').addEventListener('click',file);
+        function copyToClipBoard(evt,id)
+        {
+            debugger;
+            evt.preventDefault();
+            var folderhref = document.getElementById('hlink');
+            var reflink = folderhref.getAttribute('href');
+            var inp = document.getElementById('inputfield');
+            inp.textContent = reflink.toString();
+            inp.select();
+            document.execCommand('copy');
+            return;
+        }
+
+        function file()
+        {
+            var butOpenFile = document.getElementById('hlink');
+            debugger;
+            let fileHandle;
+            butOpenFile.addEventListener('click', async () => {
+            // Destructure the one-element array.
+            [fileHandle] = await window.showOpenFilePicker();
+            // Do something with the file handle.
+            });
+        }
+    </script>
+</html>

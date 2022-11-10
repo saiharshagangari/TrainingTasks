@@ -1,0 +1,23 @@
+﻿@model SongLyricsApp.Models.HtmlHelperTestClass
+
+@{
+    ViewBag.Title = "Home Page";
+}
+@using SongLyricsApp.Models;
+
+
+<div class="row">
+    @{ 
+        List<string> colors = new List<string>() { "red", "black", "green", "violet" };
+    }
+  @Html.TokenField("hello",colors)
+
+    Car Has ABS ? @Html.CheckBox("HasAbs", true, new {@class="form-control",@id="carAbs",name="carHasAbs"})
+    Using For => Car Has ABS ? @Html.CheckBoxFor(x=>x.carHasAbs, new { @class = "form-control", @id = "carAbs", name = "carHasABS" })
+
+
+    Car Accessories @Html.DropDownListFor(x=>x.carAccessories,new SelectList(colors))
+    Car Accessories @Html.DropDownList("Car Accessories",new SelectList(colors),"Select colors",new {@class="form-control",@id="caraccessories",@name="Car Accessories"})
+
+
+  </div>

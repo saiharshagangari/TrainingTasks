@@ -1,0 +1,78 @@
+﻿@model SongLyricsApp.Models.SongModel
+
+@{
+    ViewBag.Title = "Get";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SongModel</h4>
+    <hr />
+    <div class="row">
+        <div class="col-lg-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.SongName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SongName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Singer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Singer)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.MusicDirector)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MusicDirector)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(m => m.SongLyrics.LyricsWriter)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(m => m.SongLyrics.LyricsWriter)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(m => m.SongMovie.MovieName)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(m => m.SongMovie.MovieName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(m => m.SongMovie.Actor)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(m => m.SongMovie.Actor)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(m => m.SongMovie.Actress)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(m => m.SongMovie.Actress)
+                </dd>
+            </dl>
+        </div>
+        
+        <div class="col-lg-4 text-center">
+            @Html.DisplayFor(m=>m.SongLyrics.Lyrics)
+        </div>
+    </div>
+    
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SongId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

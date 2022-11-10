@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SongLyricsApp.Models.SongModel>
+
+@{
+    ViewBag.Title = "GetAllLyrics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetAllLyrics</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SongName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SongMovie.MovieName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Singer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusicDirector)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SongLyrics.LyricsWriter)
+        </th>
+
+        <th>
+            @Html.DisplayName("Operations")
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SongName)
+    </td>
+    <td>
+        @Html.DisplayFor(d => item.SongMovie.MovieName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Singer)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MusicDirector)
+    </td>
+    <td>
+        @Html.DisplayFor(d => item.SongLyrics.LyricsWriter)
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.SongId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.SongId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.SongId })
+    </td>
+</tr>
+}
+
+</table>
